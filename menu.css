@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+	background-color: floralwhite;
+	padding: 10px;
+}
+
+h1,
+h2,
+p,
+a {
+	font-family: Karla;
+	font-weight: 400;
+}
+
+
+.menu-btn,
+h1,
+h2 {
+	font-weight: bold;
+
+}
+
+#sidebar span {
+	font-size: 400cm;
+}
+
+#sidebar {
+	height: 100%;
+	width: 0;
+	/* Inicialmente, el panel estará oculto */
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+#sidebar.opened {
+	width: 250px;
+	/* Cuando se abre el panel, se le da un ancho de 250px */
+}
+
+#sidebar a {
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #f1f1f1;
+
+	display: block;
+	transition: 0.3s;
+}
+
+#sidebar a:hover {
+	color: #66def3;
+
+
+}
+
+.menu-btn {
+	cursor: pointer;
+	font-family: Karla;
+	font-size: 1.5em;
+}
+
+.close-btn {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+	color: #818181;
+}
+
+.container {
+	display: flex;
+	gap: 20px;
+	transition: margin-left 0.5s;
+	/* Agregamos una transición para suavizar el desplazamiento */
+	margin-left: 0;
+	/* Inicialmente, no hay desplazamiento */
+}
+
+h1,
+#sidebar.opened~.container {
+	margin-left: 250px;
+	/* Cuando el panel se abre, desplazamos el contenido a la derecha */
+}
+
+.opac-info {
+	color: darkgray;
+}
+
+
+.left-div {
+	border: 1px solid #ccc;
+	width: 7cm;
+	padding: 0px 15px;
+	/* Evita que el left-div crezca */
+}
+
+.right-div {
+	flex: 1;
+	position: relative;
+	border: 1px solid #ccc;
+	padding: 0px 5px;
+
+
+}
+
+.div-item-1,
+.div-item-2 {
+	float: left;
+	margin: 10px;
+
+}
+
+.items {
+	display: flex;
+	justify-content: space-between;
+	padding: -5px;
+	gap: 50px;
+}
+
+.estado-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0px;
+}
+
+.btn-aceptar {
+	margin-left: 10px;
+}

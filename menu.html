@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menú Desplegable</title>
+	<link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+	<div class="menu-btn" onclick="toggleMenu()">☰ Menú</div>
+
+	<div id="sidebar">
+		<span class="close-btn" onclick="toggleMenu()" style="font-size: 50px; color: red;">&times;</span>
+		<a href="#">Tablero del sistema</a>
+		<a href="#">Licencias</a>
+		<a href="#">Informes</a>
+		<a href="#">Registro de eventos</a>
+		<a href="#">Inventario</a>
+		<a href="#">Configuración</a>
+
+	</div>
+	<h1>Tablero del sistema</h1>
+
+	<div class="container">
+		<div class="left-div">
+			<h2>Estados</h2>
+			<div class="estado-info">
+				<p>Servicio de datos</p>
+				<a href="#" class="btn-aceptar">Aceptar</a>
+			</div>
+			<div class="estado-info">
+				<p>Licencia</p>
+				<a href="#" class="btn-aceptar">Aceptar</a>
+			</div>
+			<div class="estado-info">
+				<p>Almacenamiento</p>
+				<a href="#" class="btn-aceptar">Aceptar</a>
+			</div>
+			<div class="estado-info">
+				<p>Soporte remoto</p>
+				<a href="#" class="btn-aceptar">Aceptar</a>
+			</div>
+		</div>
+		<div class="right-div">
+			<h2>Informacion del sistema</h2>
+			<div class="div-item-1">
+				<p>Nombre</p>
+				<div class="items">
+					<p>Modelo de plataforma</p>
+					<p class="opac-info" >XXXX-XXXX-XXXXX</p>
+				</div>
+				<div class="items">
+					<p>Hora del sistema</p>
+					<p  class="opac-info" id="fecha-sistema">fecha y hora del sistema</p>
+				</div>
+
+			</div>
+			
+			<div class="div-item-2">
+				<div class="items">
+					<p>Ubicacion</p>
+					<p class="opac-info" >ubi</p>
+				</div>
+				<div class="items">
+					<p>Nombre de contacto</p>
+					<p class="opac-info" >nombre</p>
+				</div>
+				<div class="items">
+					<p>numero de contacto</p>
+					<p class="opac-info" >num</p>
+				</div>
+				<div class="items">
+					<p>Correo electronico de contacto</p>
+					<p class="opac-info" >correo</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="script.js"></script>
+
+</body>
+
+
+</html>
